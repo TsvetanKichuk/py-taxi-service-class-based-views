@@ -33,7 +33,6 @@ class CarListView(generic.ListView):
 
 class CarDetailView(generic.DetailView):
     model = Car
-    # template_name = "catalog/car_detail.html"
 
 
 class DriverListView(generic.ListView):
