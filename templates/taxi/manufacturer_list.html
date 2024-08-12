@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Manufacturer list</h1>
+  {% if manufacturer_list_view %}
+    <ul>
+      {% for manufacturer in manufacturer_list_view %}
+        <li><a href="{{ manufacturer.get_absolute_url }}">name: {{ manufacturer.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}
